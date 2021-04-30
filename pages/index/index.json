@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-search": "./../../miniprogram_npm/vant-weapp/search/index",
+    "van-sticky": "./../../miniprogram_npm/vant-weapp/sticky/index",
+    "van-divider": "./../../miniprogram_npm/vant-weapp/divider/index",
+    "van-notify": "./../../miniprogram_npm/vant-weapp/notify/index"
+  }
+}

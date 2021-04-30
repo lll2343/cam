@@ -1,0 +1,56 @@
+<view>
+    <view class="my-hearder">
+        <view class="my-search">
+            <van-search
+            value="{{ value }}"
+            background="#58aafe"
+            placeholder="请输入搜索关键词"
+            bind:search="onSearch"
+            bind:change="onChange"
+            />
+        </view>
+        <view class="my-pic" bindtap="goToMinePage">
+            <view>
+                <image class="my-pic-image" src="{{avatarUrl}}"/> 
+            </view>
+        </view>
+    </view>    
+
+    <view class="show-pic">
+        <swiper
+            indicator-dots
+            indicator-color="rgba(88, 170, 254,.3)"
+            indicator-active-color="rgba(88, 170, 254,.8)">
+            <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <view 
+                        class="detail-pic"
+                        catchtap="goToDetailPage" 
+                        data-index="{{index}}">
+                        {{item}}
+                    </view>
+                </swiper-item>
+            </block>   
+        </swiper>
+          
+    </view>
+
+    <view class="body">
+        <view class="camera" bindtap="useCamera">
+              <image src="./../../static/icon/camera.png"/>         
+        </view>
+    </view>
+
+    <view class="recomand">
+        <van-divider contentPosition="center">
+            推荐内容    
+        </van-divider>
+        <view class="main-recomand">
+            content
+        </view>
+            
+    </view>
+      
+</view>
+
+<van-notify id="van-notify" />

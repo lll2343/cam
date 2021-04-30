@@ -1,0 +1,62 @@
+<!--pages/results/results.wxml-->
+<view>
+    <!-- 搜索失败 -->
+    <view wx:if="{{getdatasuccess == 0}}">
+        <view>
+            <image 
+            class="empty-pic" 
+            src="./../../static/background/empty-image-search.png" 
+            mode="aspectFit"/>
+            <view class="detail">
+                未能查找到相关搜索内容
+            </view>
+
+            <view class="back" bindtap="backToIndex">
+                点击返回主页
+            </view>
+        </view>
+    </view>
+
+    <!-- 网络错误 -->
+    <view wx:elif="{{getdatasuccess == 1}}">
+        <view>
+            <image 
+            class="empty-pic" 
+            src="./../../static/background/empty-image-error.png" 
+            mode="aspectFit"/>
+            <view class="detail">
+                网络错误
+            </view>
+
+            <view class="back" bindtap="refreshPage">
+                点击刷新
+            </view>
+        </view>
+    </view>
+    
+    <view wx:else class="success">
+        <van-divider contentPosition="center">搜索结果</van-divider>
+        <view 
+            wx:for="{{result}}" 
+            wx:key="id" 
+            class="get-item-list"
+            bindtap="toDetailPage"
+            data-index="{{item.id}}">
+            <view class="left-pic">
+                pic
+            </view>
+            <view class="right-detail">
+                <view class="right-detail-title">
+                    {{item.name}}
+                </view>
+                <view class="right-detail-des">
+                    这里是一些描述性的文字
+                </view>
+                  
+            </view>
+              
+        </view>
+    </view>
+      
+</view>
+  

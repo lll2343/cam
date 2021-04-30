@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/results/results",
+    "pages/camera/camera",
+    "pages/about/about",
+    "pages/history/history",
+    "pages/mystar/mystar",
+    "pages/feedback/feedback",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#58aafe",
+    "navigationBarTitleText": "唐卡",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#58aafe",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "static/icon/home.png",
+      "selectedIconPath": "static/icon/home-active.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/mine/mine",
+      "iconPath": "static/icon/mine.png",
+      "selectedIconPath": "static/icon/mine-active.png"
+    }],
+    "position": "bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

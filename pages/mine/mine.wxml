@@ -1,0 +1,121 @@
+<!--pages/mine/mine.wxml-->
+<view>
+    <view class="top"> 
+        
+    </view>
+
+    <view class="main">
+        <view class="mydetail">
+            <view class="mypic">
+                <image class="my-pic-image" src="{{avatarUrl}}"/> 
+            </view>
+            <view class="myname">
+                {{username}}
+            </view>
+              
+        </view>
+        
+        <view class="cell">
+            <van-cell-group>
+                <van-cell
+                    icon = "star-o"
+                    title="我的收藏" 
+                    is-link 
+                    link-type="navigateTo"
+                    url="/pages/mystar/mystar">
+                </van-cell>
+
+                <van-cell
+                    icon = "orders-o"
+                    title="浏览历史" 
+                    is-link 
+                    link-type="navigateTo"
+                    url="/pages/history/history">
+                </van-cell>
+
+                <van-cell
+                    icon = "edit"
+                    title="意见反馈" 
+                    is-link 
+                    link-type="navigateTo"
+                    url="/pages/feedback/feedback">
+                </van-cell>
+                
+                <van-cell
+                    icon = "share"
+                    is-link>
+                    <view slot="title">
+                        <button
+                        class="share-btn" 
+                        style="width: 396.5rpx;height: 48rpx;padding: 0;"
+                        open-type="share" 
+                        class="share-btn"
+                        hover-class="share-btn-hover">分享好友</button>
+                    </view>
+                      
+                </van-cell>
+
+                <van-cell
+                    icon = "info-o"
+                    title="关于我们" 
+                    is-link 
+                    link-type="navigateTo"
+                    url="/pages/about/about">
+                </van-cell>
+                
+            </van-cell-group>
+        </view>
+          
+        <!-- <van-popup 
+            position="bottom"
+            custom-style="height: 40%;"
+            closeable
+            round
+            show="{{showpopup}}" 
+            bind:close="closePopup">
+            <view class="flex-btn">
+                <view class="out-btn">
+                    <button
+                        bindtap="onShareAppMessage"
+                        style="width: 180rpx;height: 180rpx"
+                        open-type="share" 
+                        class="popup-button">
+                        <view>
+                            <van-icon name="user-o" size="80rpx"/>
+                        </view>
+                        <view>
+                            好友
+                        </view>   
+                    </button>
+                </view>
+
+                <view class="out-btn">
+                    <button
+                        bindtap="onShareTimeline" 
+                        style="width: 180rpx;height: 180rpx"
+                        open-type="share" 
+                        class="popup-button">
+                        <view>
+                            <van-icon name="share" size="80rpx"/>
+                            朋友圈
+                        </view>   
+                    </button>
+                </view>
+                <view class="out-btn">
+                    <button 
+                        style="width: 180rpx;height: 180rpx"
+                        open-type="share" 
+                        class="popup-button">
+                        <view>
+                            <van-icon name="qr-invalid" size="80rpx"/>
+                        </view>
+                          
+                        <view style="font-size: 21rpx">
+                            小程序码
+                        </view>   
+                    </button>
+                </view>
+            </view>
+        </van-popup> -->
+    </view>    
+</view>

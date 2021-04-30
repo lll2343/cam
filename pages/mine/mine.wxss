@@ -1,0 +1,99 @@
+/* pages/mine/mine.wxss */
+.top {
+    width: 100%;
+    height: 400rpx;
+    border-bottom-left-radius: 50rpx;
+    border-bottom-right-radius: 50rpx;
+    background-color: #58aafe;
+}
+
+.main {
+    position: fixed;
+    top: 120rpx;
+    left: 10%;
+    width: 80%;
+    height: 900rpx;
+    border-radius: 50rpx;
+    border: 1rpx solid #ccc;
+    background-color: white;
+}
+
+.mydetail {
+    box-sizing: border-box;
+    height: 30%;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.mypic {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 70rpx;
+    border: 1rpx solid #ccc;
+    margin: 0 auto;
+    margin-top: 50rpx;
+}
+
+.my-pic-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.myname {
+    width: 80%;
+    height: 60rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #555;
+}
+
+.cell {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.share-btn {
+    background-color: white;
+    font-size: 28rpx;
+    font-weight: 400;
+    text-align: left;
+    line-height: 48rpx;
+}
+
+.share-btn-hover {
+    background-color: #f2f3f5;
+}
+
+/* .flex-btn {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.out-btn {
+    margin-left: 30rpx;
+}
+
+.popup-button {
+    background-color: white; 
+    border-radius: 0rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+}
+
+.popup-button::after {
+    border: 0;
+}
+
+.popup-button view {
+    font-size: 25rpx;
+    font-weight: 400;
+    color: #999999;
+} */

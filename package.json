@@ -1,0 +1,16 @@
+{
+  "name": "cam",
+  "version": "1.0.0",
+  "description": "weuidemo",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^1.0.0-beta.0",
+    "weui-miniprogram": "^1.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

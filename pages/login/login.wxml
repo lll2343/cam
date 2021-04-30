@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view>
+    <view class="pic">
+        <view class="myapp">
+
+        </view>
+    </view>
+    <view class="detail">
+        <text class="aboove">
+            申请获取以下权限
+        </text>
+        <text class="below">
+            获得你的公开信息（昵称，头像等）
+        </text>
+    </view>
+
+    <view class="btn">
+        <button wx:if="{{canIUse}}" open-type="getUserInfo" bindtap="getUserProfile">授权登录</button>
+        <view wx:else>请升级微信版本</view>
+    </view>
+</view>
+  

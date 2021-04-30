@@ -1,0 +1,42 @@
+<!--pages/camera/camera.wxml-->
+<view class="main">
+    <view class="take-photo">
+        <camera device-position="{{position}}"
+                flash="auto">
+
+        </camera>
+    </view>
+
+    <view class="back" bindtap="backIndex">
+        <van-icon name="close" size="78rpx" color="white">
+        </van-icon>
+    </view>
+
+    <view class="btn">
+        <view class="small" bindtap="getPhotoFromLocal">
+            <van-icon 
+                name="photo-o" 
+                size="72rpx" 
+                custom-class="pro-margin" 
+                color="white">
+            </van-icon>
+        </view>
+        <view class="bigger" bindtap="getPhoto">
+            <image 
+                class="take-photo-btn" 
+                src="./../../static/icon/take-photo.png" 
+            />
+              
+        </view>
+        <view class="small" bindtap="changeDirection">
+            <van-icon 
+                name="exchange" 
+                size="72rpx" 
+                custom-class="pro-margin"
+                color="white"
+            />
+        </view>
+    </view>
+      
+</view>
+  

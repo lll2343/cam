@@ -1,0 +1,42 @@
+<!--pages/about/about.wxml-->
+<view>
+    <view class="main-title">关于APP</view>
+      
+    <view class="outter">
+        <view class="pic">
+            <view class="my-pic">
+                
+            </view>
+        </view>
+        <view class="content">
+            <view class="topic">
+               Vant
+            </view>
+            <view class="detail" decode="true">
+                <!-- 这个text能不用就不要用，要不是为了两个缩进 -->
+                <text decode="{{true}}">&emsp;&emsp;</text>
+                vant是一个丰富的组件库，提供了很多好用的组件供我们选择。
+            </view>
+        </view>
+    </view>
+
+    <view class="main-title author">关于我们</view>
+
+    <view class="outter">
+        <view class="pic">
+            <view class="my-pic">
+                
+            </view>
+        </view>
+        <view class="content">
+            <view class="topic">
+               Vant
+            </view>
+            <view class="detail" decode="true">
+                <text decode="{{true}}">&emsp;&emsp;</text>
+                vant是一个丰富的组件库，提供了很多好用的组件供我们选择。
+            </view>
+        </view>
+    </view>
+</view>
+  

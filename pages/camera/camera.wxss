@@ -1,0 +1,67 @@
+/* pages/camera/camera.wxss */
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.take-photo {
+    width: 100%;
+    height: 75%;
+}
+
+.take-photo camera {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    position: absolute;
+    top: 20rpx;
+    left: 20rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+
+    background-color: black;
+}
+
+
+.bigger {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+    background-color: #6b6b6b;
+}
+
+.small {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 45rpx;
+    background-color: #6b6b6b;
+}
+
+.pro-margin {
+    margin-left: 10rpx;
+    margin-top: 10rpx;
+}
+
+.take-photo-btn {
+    width: 80rpx;
+    height: 80rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}

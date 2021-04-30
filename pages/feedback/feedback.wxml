@@ -1,0 +1,52 @@
+<!--pages/feedback/feedback.wxml-->
+<van-notify id="van-notify" />
+
+<van-toast id="van-toast" />
+
+<view class="top">
+    
+</view>
+  
+<van-cell-group title="意见反馈">
+    <van-field
+    model:value="{{ value }}"
+    label="建议"
+    placeholder="请输入您的建议"
+    border="{{ false }}"
+    bind:change="getValue"
+  />
+
+  <van-field
+    value="{{ message }}"
+    label="更多描述"
+    type="textarea"
+    placeholder="更多描述"
+    autosize
+    border="{{ false }}"
+    bind:change="getMessage"
+  />
+
+  <view class="rate">
+      <view class="label">
+          评分
+      </view>
+      <van-rate
+        custom-class="out-rate-class"
+        value="{{ num }}"
+        icon="like"
+        void-icon="like-o"
+        bind:change="onChange"
+      />
+  </view>
+    
+</van-cell-group>
+
+<view class="btn">
+    <van-button 
+        color="#58aafe"
+        bind:click="submit"
+        block plain>
+        提交
+    </van-button>
+</view>
+  
